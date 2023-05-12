@@ -25,7 +25,7 @@ const Dropdown2 = ({ items }) => {
         {items.map((item, index) => (
           <li
             key={index}
-            className="h-7 mt-2 text-gray-300 cursor-pointer hover:bg-blue-200 hover:text-black rounded-md"
+            className="h-auto mt-2 text-gray-300 cursor-pointer hover:bg-blue-200 hover:text-black rounded-md"
             onClick={() => handleItemClick(item)}
           >
             {item}

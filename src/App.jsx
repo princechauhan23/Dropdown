@@ -4,6 +4,7 @@ import Dropdown2 from "./Dropdown2";
 import Dropdown3 from "./Dropdown3";
 import "./index.css";
 
+// functional component
 function App() {
   // list item array
   const listItems = [
@@ -15,9 +16,12 @@ function App() {
     "By Prince",
   ];
   return (
-    <div id="conatiner" className="h-screen w-full text-center flex flex-col items-center gap-y-10 bg-gradient-to-b from-blue-800 from-10% to-indigo-950 to-90%">
+    <div
+      id="conatiner"
+      className="h-screen w-full text-center flex flex-col items-center gap-y-10 min-w-max bg-gradient-to-b from-blue-800 from-10% to-indigo-950 to-90%"
+    >
       <h1>Dropdown</h1>
-      <div className="h-1/6 w-6/12 flex justify-evenly items-center">
+      <div className="h-1/6 w-9/12 flex justify-evenly items-center">
         <Dropdown1 items={listItems} />
         <Dropdown2 items={listItems} />
         <Dropdown3 items={listItems} />
